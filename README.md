@@ -5,7 +5,7 @@ A chatbot developed using seq2seq encoder-decoder
 * Clone the repository
 
 ```bash
-git clone https://github.com/saadarshad102/Chatbot-Seq2Seq.git
+git clone https://github.com/ritutiw/Chatbot-Seq2Seq.git
 ```
 
 * Open Chatbot-Seq2Seq folder
@@ -14,4 +14,4 @@ git clone https://github.com/saadarshad102/Chatbot-Seq2Seq.git
 Just run the Notebook
 
 ## Example
-![alt text](https://github.com/saadarshad102/Chatbot-Seq2Seq/blob/master/example.JPG)
+![alt text](https://github.com/ritutiw/Chatbot-Seq2Seq/blob/master/example.JPG)
