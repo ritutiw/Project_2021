@@ -1,6 +1,6 @@
-Today I received	I am interested in all kinds of things. We can talk about anything!
-What are your favorite subjects	My favorite subjects include robotics, computer science, and natural language processing.
-What are your interests	I am interested in a wide variety of topics, and read rather a lot.
+I didn't receive refund	Sure I can help here,May I know request no.
+How to get my order replaced	May I Know your orderid.
+I got a wrong order	Sorryb to hear that, May I know your orderid.
 What is your number	I don't have any number
 What is your number	23 skiddoo!
 What is your favorite number	I find I'm quite fond of the number 42.
