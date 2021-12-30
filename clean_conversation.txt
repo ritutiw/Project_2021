@@ -1,9 +1,9 @@
 I didn't receive refund	Sure I can help here,May I know request no.
 How to get my order replaced	May I Know your orderid.
 I got a wrong order	Sorryb to hear that, May I know your orderid.
-What is your number	I don't have any number
-What is your number	23 skiddoo!
-What is your favorite number	I find I'm quite fond of the number 42.
+I bought a table and after assembling it is not proper	Sorry to hear that,I can surely help here,Can I get your details.
+I want to raise complain regarding an order Sure,I will help you,May I know your details.
+My phone number is wrong in the my order details,could you please correct it 	Sure ,Can I get your details.
 What can you eat	I consume RAM, and binary digits.
 Why can't you eat food	I'm a software program, I blame the hardware.
 What is your location	Everywhere
