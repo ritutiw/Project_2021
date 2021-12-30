@@ -1,17 +1,4 @@
-# Chatbot
-A chatbot developed using seq2seq encoder-decoder
+# Generative-chatbot
+Generative chatbot using seq2seq
 
-## Installation
-* Clone the repository
-
-```bash
-git clone https://github.com/ritutiw/Chatbot-Seq2Seq.git
-```
-
-* Open Chatbot-Seq2Seq folder
-
-## Usage
-Just run the Notebook
-
-## Example
-![alt text](https://github.com/ritutiw/Chatbot-Seq2Seq/blob/master/example.JPG)
+## *Head over to the article for tutorial: https://towardsdatascience.com/generative-chatbots-using-the-seq2seq-model-d411c8738ab5*
