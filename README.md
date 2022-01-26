@@ -1,29 +1,88 @@
-# Seq2seq Attention Bot
+# Seq2Seq-Chatbot
 
-  It is a chatbot with seq2seq neural network with basic attention mechanism, completely implemented in Python using `Tensorflow 2.0` and `keras` package. Here we use [Cornell Movie Corpus Dataset!](http://www.cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html)
-  
-  The follwoing steps are needed to be performed to run the chatbot.
-1. Choose any version to work with.
-2. The data is first needed to be preprocessed using **preprocess.py**. It then creates two languages ( one for questions and one for answers) and saves them. 
-3. The file **Chatbot_class.py** contains the python implementation of our seq2seq model using basic RNN and GRU Cell.
-4. The file **training.py** needs to be executed to run the training over the dataset. This training step differs between v_1 and v_2. It creates two .pickle file called *encoder* and *decoder* which contians the trained parameters. **Note: This step may take a while. It is recommended to use a GPU to perform the training.**
-5. Finally **bot_app.py** can be executed to run the chatbot from console.
+## Introduction
+This Chatbot is a TensorFlow implementation of Seq2Seq Mode. It make use of a seq2seq model RNN for sentence predictions. The chatbot is trained on Cornell Movie Dialogs Corpus on Conversation of lenghth between 5 to 2 words
+
+## Publication
+
+With the given link below,you can find my paper on Seq2Seq AI Chatbot with Attention Mechanism
+
+Link: https://arxiv.org/abs/2006.02767
+
+arix identifier: 2006.02767
+License: http://arxiv.org/licenses/nonexclusive-distrib/1.0/
+
+## Installation
+To run this chabtot you will need:
+* Python 3.5 
+* Tensorflow (1.14.0)
+* Numpy
+* Flask
+* Matplotlib
+* [Dataset](http://www.cs.cornell.edu/~cristian/data/cornell_movie_dialogs_corpus.zip)
+
+## Running
+### To chat with the trained model from Web Chat:
+1. First install the required depedencies and run 
+`pip install -r requirment.txt`
+2. From the BOT_UI directory run run.py
+`python run.py`
+3. Open a browser to the URL indicated by the server console, This is typically: http://localhost:5000/
+
+### To chat with the trained model from Python Console:
+1. First install the required depedencies from root directory and run 
+`pip install -r requirment.txt`
+2. From the root directory run 
+`python chat.py`
+
+## List of Hyperparameters
+<img src="https://github.com/Abonia1/Seq2Seq-Chatbot/blob/master/Images/Config.jpg" alt="alt text" width="600" height="500">
 
 
-In this model, we use Cornell-Corpus Movie dialogue dataset for training the chatbot.
-    
-1. Extract the .zip file contaiing the Movie Dialogue dataset.
-  
-2. Run `preprocess.py` create the language specific files and the tokenizers, where we store all the language information. 
-  
-3. Run `Training.py` to train the dataset
-  
-4. If you run it for the first time, set `first_time = True`, it will save the encoder and decoder after training
-  
-5. If you want to train it more, set `first_time = False`, it will load the poreviously saved encoder and decoder and start training from it.
-  
-6. You need to run `bot_app.py` after training to run the chatbot in an interactive mode from console.
 
-7. `bot_app.py` implements 3 different sampling schemes in order to generate specific replies to the query.
+## For Training Model 
+To Train Model from Python Console:
+1. Configure the `config.py` file for desired training hyperparameters
+2. Run train.py
+`python train.py`
+3. Make sure the datasets should be present in the `datasets` folder
 
-  
+## Results
+Config1:Model was able to train to `Accuracy of 62%` and `Loss of 19%` and after that it was overfitting
+Config2:Model was able to train to `Accuracy of 63%` and `Loss of 18%` and after that it was overfitting
+
+### Accuracy
+## Config1
+<img src="https://github.com/Abonia1/Seq2Seq-Chatbot/blob/master/Images/Accuracy1.jpg" alt="alt text" width="500" height="300">
+
+### Loss
+<img src="https://github.com/Abonia1/Seq2Seq-Chatbot/blob/master/Images/Loss1.jpg" alt="alt text" width="500" height="300">
+
+## Config2
+### Accuracy
+<img src="https://github.com/Abonia1/Seq2Seq-Chatbot/blob/master/Images/Accuracy2.jpg" alt="alt text" width="500" height="300">
+
+### Loss
+<img src="https://github.com/Abonia1/Seq2Seq-Chatbot/blob/master/Images/Loss2.jpg" alt="alt text" width="500" height="300">
+
+### Chat Results
+```
+Human :hey
+Bot :hi
+Human :what doing
+Bot :sleep
+Human :when will you be okay
+Bot :just few days 
+Human :where are you from
+Bot :southern california
+Human :who am i
+Bot :doctor livingston
+Human :really well
+Bot :goodbye
+```
+Bot reply Result in web app
+
+<img src="https://github.com/Abonia1/Seq2Seq-Chatbot/blob/master/Images/Result.jpg" alt="alt text" width="700" height="500">
+
+
+
